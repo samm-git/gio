@@ -329,7 +329,7 @@ status = "generate"
 [[object]]
 name = "Gio.DesktopAppInfo"
 status = "generate"
-cfg_condition = "not(windows)"
+cfg_condition = "all(not(windows),not(target_os = "macos"))"
     [[object.function]]
     name = "search"
     # returns vec of string
